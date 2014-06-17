@@ -1150,6 +1150,42 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="EIA3528">
+<wire x1="-0.9" y1="-1.6" x2="-2.6" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-1.6" x2="-2.6" y2="1.55" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="1.55" x2="-0.9" y2="1.55" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.55" x2="2.2" y2="-1.55" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="-1.55" x2="2.6" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-1.2" x2="2.6" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="1.25" x2="2.2" y2="1.55" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="1.55" x2="1" y2="1.55" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="1.55" x2="1" y2="1.55" width="0.2032" layer="21"/>
+<wire x1="0.609" y1="1.311" x2="0.609" y2="-1.286" width="0.2032" layer="21" style="longdash"/>
+<smd name="C" x="-1.65" y="0" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<smd name="A" x="1.65" y="0" dx="2.5" dy="1.2" layer="1" rot="R90"/>
+<text x="-2.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.24" y="-1.37" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="0805">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="1210">
+<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.3" x2="-1.6" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-1.3" x2="-1.6" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="-1.3" x2="1.6" y2="-1.3" width="0.2032" layer="21"/>
+<smd name="1" x="-1.6" y="0" dx="1.2" dy="2" layer="1"/>
+<smd name="2" x="1.6" y="0" dx="1.2" dy="2" layer="1"/>
+<text x="-0.8" y="0.5" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-0.7" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1161,6 +1197,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="CAP_POL">
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1279,6 +1327,69 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="CAP-08280"/>
 <attribute name="VALUE" value="4.7uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="47UF-10V-10%(TANT)" prefix="C" uservalue="yes">
+<description>CAP-08310 &lt;BR&gt;
+47uF Tantalum SMT&lt;br&gt;
+ 10V 10% (EIA-3528)</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EIA3528">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08310"/>
+<attribute name="VALUE" value="47uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22UF-6.3V-20%(0805)" prefix="C" uservalue="yes">
+<description>CAP-08402&lt;BR&gt;
+Ceramic&lt;BR&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08402"/>
+<attribute name="VALUE" value="22uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22UF-16V-20%-(1210)" prefix="C" uservalue="yes">
+<description>CAP-10381</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="1210">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-10381"/>
+<attribute name="VALUE" value="22uF" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1519,6 +1630,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="RES-08968"/>
 <attribute name="VALUE" value="330K"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="33OHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<description>RES-08270</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08270" constant="no"/>
+<attribute name="VALUE" value="33OHM" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6692,7 +6823,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="R13" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
-<part name="R16" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="100OHM1/10W1%(0603)" device="" value="100"/>
 <part name="R17" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
 <part name="R18" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
 <part name="R19" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
@@ -6710,12 +6841,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="R33" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="R34" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
-<part name="R35" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
-<part name="R36" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
-<part name="R37" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
-<part name="R38" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
 <part name="R39" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
-<part name="C3" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
@@ -6725,9 +6851,9 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="D2" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="D3" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
-<part name="R45" library="SparkFun-Resistors" deviceset="390OHM1/10W1%(0603)" device="" value="390"/>
-<part name="R46" library="SparkFun-Resistors" deviceset="390OHM1/10W1%(0603)" device="" value="390"/>
-<part name="R47" library="SparkFun-Resistors" deviceset="390OHM1/10W1%(0603)" device="" value="390"/>
+<part name="R45" library="SparkFun-Resistors" deviceset="390OHM1/10W1%(0603)" device="" value="68"/>
+<part name="R46" library="SparkFun-Resistors" deviceset="390OHM1/10W1%(0603)" device="" value="68"/>
+<part name="R47" library="SparkFun-Resistors" deviceset="390OHM1/10W1%(0603)" device="" value="68"/>
 <part name="U5" library="MSSRP-Lib" deviceset="SI7020" device="-A10"/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R49" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
@@ -6745,8 +6871,8 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U4" library="MSSRP-Lib" deviceset="ADS1256" device="IDBR"/>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
-<part name="R55" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
-<part name="R56" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
+<part name="R55" library="SparkFun-Resistors" deviceset="100OHM1/10W1%(0603)" device="" value="100"/>
+<part name="R56" library="SparkFun-Resistors" deviceset="100OHM1/10W1%(0603)" device="" value="100"/>
 <part name="R57" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
 <part name="R73" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
 <part name="C11" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
@@ -6807,8 +6933,8 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="C28" library="SparkFun-Capacitors" deviceset="10NF/10000PF-50V-10%(0603)" device="" value="10nF"/>
 <part name="LED3" library="SparkFun-LED" deviceset="LED-RG" device="LTST-C195KGJRKT"/>
 <part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
-<part name="R98" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="470"/>
-<part name="R99" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="470"/>
+<part name="R98" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="68"/>
+<part name="R99" library="SparkFun-Resistors" deviceset="470OHM1/10W1%(0603)" device="" value="68"/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="-SMD-1101NE"/>
 <part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="-SMD-1101NE"/>
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
@@ -6828,7 +6954,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="C7" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
 <part name="C32" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
-<part name="C33" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
+<part name="C33" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)" device="" value="10uF"/>
 <part name="C34" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="C35" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="R48" library="SparkFun-Resistors" deviceset="3.3MOHM-1/10W-1%(0603)" device="" value="3.3k"/>
@@ -6900,8 +7026,27 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="J8" library="SparkFun-Connectors" deviceset="BNC" device="PTH"/>
 <part name="U$1" library="adafruit" deviceset="MICROSD" device=""/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
-<part name="C8" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="10UF-6.3V-20%(0603)" device="" value="10uF"/>
 <part name="C31" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="0OHM1/10W5%(0603)" device="" value="0"/>
+<part name="R6" library="SparkFun-Resistors" deviceset="33OHM1/10W1%(0603)" device="" value="33OHM"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="33OHM1/10W1%(0603)" device="" value="33OHM"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="33OHM1/10W1%(0603)" device="" value="33OHM"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="33OHM1/10W1%(0603)" device="" value="33OHM"/>
+<part name="C3" library="SparkFun-Capacitors" deviceset="10NF/10000PF-50V-10%(0603)" device="" value="10nF"/>
+<part name="C36" library="SparkFun-Capacitors" deviceset="10NF/10000PF-50V-10%(0603)" device="" value="10nF"/>
+<part name="C52" library="SparkFun-Capacitors" deviceset="10NF/10000PF-50V-10%(0603)" device="" value="10nF"/>
+<part name="C54" library="SparkFun-Capacitors" deviceset="10NF/10000PF-50V-10%(0603)" device="" value="10nF"/>
+<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY33" library="supply2" deviceset="GND" device=""/>
+<part name="C53" library="SparkFun-Capacitors" deviceset="47UF-10V-10%(TANT)" device="" value="47uF"/>
+<part name="C55" library="SparkFun-Capacitors" deviceset="47UF-10V-10%(TANT)" device="" value="47uF"/>
+<part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
+<part name="C56" library="SparkFun-Capacitors" deviceset="22UF-6.3V-20%(0805)" device="" value="22uF"/>
+<part name="C57" library="SparkFun-Capacitors" deviceset="22UF-16V-20%-(1210)" device="" value="22uF"/>
+<part name="C58" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -6912,7 +7057,20 @@ Mating wall wart : TOL-00298 (and others)</description>
 <text x="248.92" y="414.02" size="1.778" layer="97">Battery JST connector</text>
 <text x="464.82" y="414.02" size="1.778" layer="97">OUTPUTS</text>
 <text x="523.24" y="414.02" size="1.778" layer="97">INPUTS</text>
-<text x="502.92" y="297.18" size="1.778" layer="97">POWER / CONN</text>
+<text x="495.3" y="304.8" size="1.778" layer="97">POWER / CONN</text>
+<text x="162.56" y="180.34" size="1.778" layer="97">DAC7562</text>
+<text x="314.96" y="383.54" size="1.778" layer="97">LP2989AIM-5.0</text>
+<text x="314.96" y="350.52" size="1.778" layer="97">LP2989AIM-3.3</text>
+<text x="149.86" y="345.44" size="1.778" layer="97">MAX8934A</text>
+<text x="317.5" y="76.2" size="1.778" layer="97">DIL SOCKET
+Row: 26.67 mm
+Pitch: 2.54 mm</text>
+<text x="528.32" y="40.64" size="1.778" layer="97">MICRO-SD Socket</text>
+<text x="454.66" y="152.4" size="1.778" layer="97">32.768 kHz</text>
+<text x="132.08" y="99.06" size="1.778" layer="97">7.68 MHz</text>
+<text x="58.42" y="195.58" size="1.778" layer="97">MAX31855T</text>
+<text x="58.42" y="149.86" size="1.778" layer="97">MAX31855T</text>
+<text x="149.86" y="401.32" size="1.778" layer="97">U10</text>
 </plain>
 <instances>
 <instance part="PAD1" gate="G$1" x="7.62" y="421.64"/>
@@ -6947,12 +7105,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="R33" gate="G$1" x="398.78" y="185.42" rot="R90"/>
 <instance part="SUPPLY4" gate="GND" x="398.78" y="172.72"/>
 <instance part="R34" gate="G$1" x="391.16" y="185.42" rot="R90"/>
-<instance part="R35" gate="G$1" x="383.54" y="185.42" rot="R90"/>
-<instance part="R36" gate="G$1" x="375.92" y="185.42" rot="R90"/>
-<instance part="R37" gate="G$1" x="368.3" y="185.42" rot="R90"/>
-<instance part="R38" gate="G$1" x="406.4" y="185.42" rot="R90"/>
-<instance part="R39" gate="G$1" x="414.02" y="185.42" rot="R90"/>
-<instance part="C3" gate="G$1" x="424.18" y="205.74"/>
+<instance part="R39" gate="G$1" x="406.4" y="185.42" rot="R90"/>
 <instance part="C4" gate="G$1" x="304.8" y="241.3"/>
 <instance part="C5" gate="G$1" x="294.64" y="241.3"/>
 <instance part="SUPPLY6" gate="GND" x="304.8" y="254" rot="R180"/>
@@ -6985,7 +7138,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="R55" gate="G$1" x="170.18" y="66.04"/>
 <instance part="R56" gate="G$1" x="170.18" y="58.42"/>
 <instance part="R57" gate="G$1" x="170.18" y="50.8"/>
-<instance part="R73" gate="G$1" x="66.04" y="58.42"/>
+<instance part="R73" gate="G$1" x="86.36" y="53.34"/>
 <instance part="C11" gate="G$1" x="91.44" y="93.98"/>
 <instance part="C12" gate="G$1" x="81.28" y="93.98"/>
 <instance part="C13" gate="G$1" x="71.12" y="93.98"/>
@@ -7105,8 +7258,8 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="C46" gate="G$1" x="345.44" y="368.3"/>
 <instance part="SUPPLY46" gate="GND" x="345.44" y="414.02" rot="R180"/>
 <instance part="SUPPLY47" gate="GND" x="345.44" y="381" rot="R180"/>
-<instance part="SUPPLY48" gate="G$1" x="373.38" y="396.24" rot="R270"/>
-<instance part="SUPPLY49" gate="G$1" x="373.38" y="363.22" rot="R270"/>
+<instance part="SUPPLY48" gate="G$1" x="386.08" y="396.24" rot="R270"/>
+<instance part="SUPPLY49" gate="G$1" x="386.08" y="363.22" rot="R270"/>
 <instance part="C47" gate="G$1" x="279.4" y="386.08"/>
 <instance part="C48" gate="G$1" x="279.4" y="353.06"/>
 <instance part="R116" gate="G$1" x="360.68" y="391.16" rot="R180"/>
@@ -7126,8 +7279,8 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="SUPPLY53" gate="GND" x="523.24" y="248.92"/>
 <instance part="SUPPLY54" gate="GND" x="464.82" y="370.84"/>
 <instance part="SUPPLY55" gate="GND" x="464.82" y="393.7"/>
-<instance part="J1" gate="G$1" x="515.62" y="276.86"/>
-<instance part="SUPPLY56" gate="GND" x="520.7" y="274.32"/>
+<instance part="J1" gate="G$1" x="510.54" y="289.56"/>
+<instance part="SUPPLY56" gate="GND" x="515.62" y="279.4"/>
 <instance part="J5" gate="G$1" x="533.4" y="320.04"/>
 <instance part="J4" gate="G$1" x="533.4" y="335.28"/>
 <instance part="J6" gate="G$1" x="533.4" y="350.52"/>
@@ -7144,6 +7297,25 @@ Mating wall wart : TOL-00298 (and others)</description>
 <instance part="C15" gate="G$1" x="22.86" y="129.54"/>
 <instance part="C8" gate="G$1" x="203.2" y="403.86"/>
 <instance part="C31" gate="G$1" x="127" y="403.86"/>
+<instance part="R4" gate="G$1" x="510.54" y="251.46"/>
+<instance part="R2" gate="G$1" x="510.54" y="266.7"/>
+<instance part="R3" gate="G$1" x="510.54" y="259.08"/>
+<instance part="R6" gate="G$1" x="25.4" y="71.12"/>
+<instance part="R7" gate="G$1" x="25.4" y="63.5"/>
+<instance part="R8" gate="G$1" x="25.4" y="38.1"/>
+<instance part="R9" gate="G$1" x="25.4" y="30.48"/>
+<instance part="C3" gate="G$1" x="38.1" y="68.58" rot="R180"/>
+<instance part="C36" gate="G$1" x="38.1" y="35.56" rot="R180"/>
+<instance part="C52" gate="G$1" x="45.72" y="76.2" rot="R90"/>
+<instance part="C54" gate="G$1" x="45.72" y="43.18" rot="R90"/>
+<instance part="SUPPLY5" gate="GND" x="53.34" y="76.2" rot="R90"/>
+<instance part="SUPPLY33" gate="GND" x="53.34" y="43.18" rot="R90"/>
+<instance part="C53" gate="G$1" x="375.92" y="368.3" rot="R180"/>
+<instance part="C55" gate="G$1" x="375.92" y="401.32" rot="R180"/>
+<instance part="SUPPLY21" gate="GND" x="259.08" y="378.46"/>
+<instance part="C56" gate="G$1" x="259.08" y="386.08"/>
+<instance part="C57" gate="G$1" x="520.7" y="289.56"/>
+<instance part="C58" gate="G$1" x="530.86" y="289.56"/>
 </instances>
 <busses>
 </busses>
@@ -7201,29 +7373,9 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="398.78" y="177.8"/>
 <pinref part="R34" gate="G$1" pin="1"/>
 <wire x1="391.16" y1="177.8" x2="391.16" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="R35" gate="G$1" pin="1"/>
-<wire x1="391.16" y1="177.8" x2="383.54" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="177.8" x2="383.54" y2="180.34" width="0.1524" layer="91"/>
-<junction x="391.16" y="177.8"/>
-<pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="383.54" y1="177.8" x2="375.92" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="177.8" x2="368.3" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="177.8" x2="368.3" y2="180.34" width="0.1524" layer="91"/>
-<junction x="383.54" y="177.8"/>
-<pinref part="R36" gate="G$1" pin="1"/>
-<wire x1="375.92" y1="180.34" x2="375.92" y2="177.8" width="0.1524" layer="91"/>
-<junction x="375.92" y="177.8"/>
-<pinref part="R38" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="180.34" x2="406.4" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="177.8" x2="398.78" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="R39" gate="G$1" pin="1"/>
-<wire x1="406.4" y1="177.8" x2="414.02" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="177.8" x2="414.02" y2="180.34" width="0.1524" layer="91"/>
-<junction x="406.4" y="177.8"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="414.02" y1="177.8" x2="424.18" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="424.18" y1="177.8" x2="424.18" y2="203.2" width="0.1524" layer="91"/>
-<junction x="414.02" y="177.8"/>
+<wire x1="398.78" y1="177.8" x2="406.4" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="177.8" x2="406.4" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -7575,6 +7727,10 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="345.44" y1="408.94" x2="355.6" y2="408.94" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="408.94" x2="355.6" y2="406.4" width="0.1524" layer="91"/>
 <junction x="345.44" y="408.94"/>
+<pinref part="C55" gate="G$1" pin="-"/>
+<wire x1="355.6" y1="408.94" x2="375.92" y2="408.94" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="408.94" x2="375.92" y2="406.4" width="0.1524" layer="91"/>
+<junction x="355.6" y="408.94"/>
 </segment>
 <segment>
 <pinref part="SUPPLY47" gate="GND" pin="GND"/>
@@ -7585,6 +7741,10 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="345.44" y1="375.92" x2="355.6" y2="375.92" width="0.1524" layer="91"/>
 <wire x1="355.6" y1="375.92" x2="355.6" y2="373.38" width="0.1524" layer="91"/>
 <junction x="345.44" y="375.92"/>
+<pinref part="C53" gate="G$1" pin="-"/>
+<wire x1="355.6" y1="375.92" x2="375.92" y2="375.92" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="375.92" x2="375.92" y2="373.38" width="0.1524" layer="91"/>
+<junction x="355.6" y="375.92"/>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="GND"/>
@@ -7616,12 +7776,21 @@ Mating wall wart : TOL-00298 (and others)</description>
 <segment>
 <pinref part="J1" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY56" gate="GND" pin="GND"/>
-<wire x1="518.16" y1="279.4" x2="520.7" y2="279.4" width="0.1524" layer="91"/>
-<wire x1="520.7" y1="279.4" x2="520.7" y2="276.86" width="0.1524" layer="91"/>
+<wire x1="513.08" y1="292.1" x2="515.62" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="292.1" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="GNDBREAK"/>
-<wire x1="518.16" y1="281.94" x2="520.7" y2="281.94" width="0.1524" layer="91"/>
-<wire x1="520.7" y1="281.94" x2="520.7" y2="279.4" width="0.1524" layer="91"/>
-<junction x="520.7" y="279.4"/>
+<wire x1="515.62" y1="284.48" x2="515.62" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="513.08" y1="294.64" x2="515.62" y2="294.64" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="294.64" x2="515.62" y2="292.1" width="0.1524" layer="91"/>
+<junction x="515.62" y="292.1"/>
+<pinref part="C57" gate="G$1" pin="2"/>
+<wire x1="520.7" y1="287.02" x2="520.7" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="284.48" x2="515.62" y2="284.48" width="0.1524" layer="91"/>
+<junction x="515.62" y="284.48"/>
+<pinref part="C58" gate="G$1" pin="2"/>
+<wire x1="520.7" y1="284.48" x2="530.86" y2="284.48" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="284.48" x2="530.86" y2="287.02" width="0.1524" layer="91"/>
+<junction x="520.7" y="284.48"/>
 </segment>
 <segment>
 <pinref part="J10" gate="G$1" pin="GND"/>
@@ -7642,6 +7811,21 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="SUPPLY58" gate="GND" pin="GND"/>
 <pinref part="R130" gate="G$1" pin="1"/>
 <wire x1="510.54" y1="342.9" x2="513.08" y2="342.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C54" gate="G$1" pin="2"/>
+<pinref part="SUPPLY33" gate="GND" pin="GND"/>
+<wire x1="48.26" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<pinref part="C52" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C56" gate="G$1" pin="2"/>
+<pinref part="SUPPLY21" gate="GND" pin="GND"/>
+<wire x1="259.08" y1="383.54" x2="259.08" y2="381" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8192,49 +8376,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="398.78" y1="208.28" x2="398.78" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$35" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PIO9"/>
-<pinref part="R35" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="200.66" x2="383.54" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="383.54" y1="200.66" x2="383.54" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PIO10"/>
-<wire x1="350.52" y1="198.12" x2="375.92" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="375.92" y1="198.12" x2="375.92" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="R36" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$37" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PIO11"/>
-<pinref part="R37" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="195.58" x2="368.3" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="368.3" y1="195.58" x2="368.3" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="BT_!RESET" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="PIO4"/>
-<wire x1="406.4" y1="213.36" x2="350.52" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="R38" gate="G$1" pin="2"/>
-<wire x1="406.4" y1="213.36" x2="406.4" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="213.36" x2="424.18" y2="213.36" width="0.1524" layer="91"/>
-<junction x="406.4" y="213.36"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="424.18" y1="210.82" x2="424.18" y2="213.36" width="0.1524" layer="91"/>
-<label x="368.3" y="213.36" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="PIO3"/>
 <pinref part="R39" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="215.9" x2="414.02" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="215.9" x2="414.02" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="215.9" x2="406.4" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="215.9" x2="406.4" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -8380,24 +8527,14 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="355.6" y1="363.22" x2="368.3" y2="363.22" width="0.1524" layer="91"/>
 <junction x="355.6" y="363.22"/>
 <pinref part="R117" gate="G$1" pin="1"/>
-<wire x1="368.3" y1="363.22" x2="373.38" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="363.22" x2="375.92" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="363.22" x2="386.08" y2="363.22" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="358.14" x2="368.3" y2="358.14" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="358.14" x2="368.3" y2="363.22" width="0.1524" layer="91"/>
 <junction x="368.3" y="363.22"/>
-</segment>
-</net>
-<net name="UART_CTS" class="0">
-<segment>
-<wire x1="266.7" y1="203.2" x2="309.88" y2="203.2" width="0.1524" layer="91"/>
-<label x="269.24" y="203.2" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="UARTCTS"/>
-</segment>
-</net>
-<net name="UART_RTS" class="0">
-<segment>
-<wire x1="266.7" y1="205.74" x2="309.88" y2="205.74" width="0.1524" layer="91"/>
-<label x="269.24" y="205.74" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="UARTRTS"/>
+<pinref part="C53" gate="G$1" pin="+"/>
+<wire x1="375.92" y1="365.76" x2="375.92" y2="363.22" width="0.1524" layer="91"/>
+<junction x="375.92" y="363.22"/>
 </segment>
 </net>
 <net name="UART_TX" class="0">
@@ -8468,6 +8605,11 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="U1" gate="G$1" pin="P$39"/>
 <wire x1="350.52" y1="132.08" x2="398.78" y2="132.08" width="0.1524" layer="91"/>
 <label x="386.08" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="490.22" y1="251.46" x2="505.46" y2="251.46" width="0.1524" layer="91"/>
+<label x="492.76" y="251.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -8542,10 +8684,14 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="355.6" y1="396.24" x2="368.3" y2="396.24" width="0.1524" layer="91"/>
 <junction x="355.6" y="396.24"/>
 <pinref part="R116" gate="G$1" pin="1"/>
-<wire x1="368.3" y1="396.24" x2="373.38" y2="396.24" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="396.24" x2="375.92" y2="396.24" width="0.1524" layer="91"/>
+<wire x1="375.92" y1="396.24" x2="386.08" y2="396.24" width="0.1524" layer="91"/>
 <wire x1="365.76" y1="391.16" x2="368.3" y2="391.16" width="0.1524" layer="91"/>
 <wire x1="368.3" y1="391.16" x2="368.3" y2="396.24" width="0.1524" layer="91"/>
 <junction x="368.3" y="396.24"/>
+<pinref part="C55" gate="G$1" pin="+"/>
+<wire x1="375.92" y1="398.78" x2="375.92" y2="396.24" width="0.1524" layer="91"/>
+<junction x="375.92" y="396.24"/>
 </segment>
 <segment>
 <pinref part="SUPPLY51" gate="G$1" pin="5V"/>
@@ -8618,14 +8764,16 @@ Mating wall wart : TOL-00298 (and others)</description>
 <segment>
 <pinref part="R73" gate="G$1" pin="2"/>
 <pinref part="U4" gate="G$1" pin="VREFP"/>
-<wire x1="99.06" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="53.34" x2="93.98" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="AFE_AIN0" class="0">
 <segment>
-<label x="20.32" y="81.28" size="1.778" layer="95"/>
-<pinref part="U4" gate="G$1" pin="AIN0"/>
-<wire x1="99.06" y1="81.28" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
+<label x="7.62" y="71.12" size="1.778" layer="95"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="71.12" x2="20.32" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="508" y1="353.06" x2="495.3" y2="353.06" width="0.1524" layer="91"/>
@@ -8640,9 +8788,9 @@ Mating wall wart : TOL-00298 (and others)</description>
 </net>
 <net name="AFE_AIN1" class="0">
 <segment>
-<wire x1="17.78" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
-<label x="20.32" y="78.74" size="1.778" layer="95"/>
-<pinref part="U4" gate="G$1" pin="AIN1"/>
+<label x="7.62" y="63.5" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="495.3" y="347.98" size="1.778" layer="95"/>
@@ -8663,9 +8811,9 @@ Mating wall wart : TOL-00298 (and others)</description>
 </net>
 <net name="AFE_AIN2" class="0">
 <segment>
-<wire x1="17.78" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
-<label x="20.32" y="76.2" size="1.778" layer="95"/>
-<pinref part="U4" gate="G$1" pin="AIN2"/>
+<label x="7.62" y="38.1" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="38.1" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="508" y1="388.62" x2="495.3" y2="388.62" width="0.1524" layer="91"/>
@@ -8680,9 +8828,9 @@ Mating wall wart : TOL-00298 (and others)</description>
 </net>
 <net name="AFE_AIN3" class="0">
 <segment>
-<wire x1="17.78" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
-<label x="20.32" y="73.66" size="1.778" layer="95"/>
-<pinref part="U4" gate="G$1" pin="AIN3"/>
+<label x="7.62" y="30.48" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="495.3" y="383.54" size="1.778" layer="95"/>
@@ -8717,8 +8865,8 @@ Mating wall wart : TOL-00298 (and others)</description>
 </segment>
 <segment>
 <pinref part="R73" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="58.42" x2="60.96" y2="58.42" width="0.1524" layer="91"/>
-<label x="20.32" y="58.42" size="1.778" layer="95"/>
+<wire x1="68.58" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
+<label x="68.58" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$71" class="0">
@@ -9030,9 +9178,10 @@ Mating wall wart : TOL-00298 (and others)</description>
 <junction x="193.04" y="396.24"/>
 <junction x="203.2" y="396.24"/>
 <label x="261.62" y="396.24" size="1.778" layer="95"/>
-<wire x1="203.2" y1="396.24" x2="269.24" y2="396.24" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="396.24" x2="259.08" y2="396.24" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G$1" pin="IN"/>
 <pinref part="C41" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="396.24" x2="269.24" y2="396.24" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="396.24" x2="279.4" y2="396.24" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="396.24" x2="289.56" y2="396.24" width="0.1524" layer="91"/>
 <wire x1="289.56" y1="396.24" x2="289.56" y2="391.16" width="0.1524" layer="91"/>
@@ -9055,6 +9204,9 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="269.24" y1="363.22" x2="269.24" y2="396.24" width="0.1524" layer="91"/>
 <junction x="269.24" y="396.24"/>
 <pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C56" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="396.24" x2="259.08" y2="391.16" width="0.1524" layer="91"/>
+<junction x="259.08" y="396.24"/>
 </segment>
 <segment>
 <pinref part="U12" gate="G$1" pin="!SHDN"/>
@@ -9093,8 +9245,16 @@ Mating wall wart : TOL-00298 (and others)</description>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="PWR"/>
-<wire x1="518.16" y1="284.48" x2="538.48" y2="284.48" width="0.1524" layer="91"/>
-<label x="530.86" y="284.48" size="1.778" layer="95"/>
+<wire x1="513.08" y1="297.18" x2="520.7" y2="297.18" width="0.1524" layer="91"/>
+<label x="533.4" y="297.18" size="1.778" layer="95"/>
+<pinref part="C58" gate="G$1" pin="1"/>
+<wire x1="520.7" y1="297.18" x2="530.86" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="297.18" x2="538.48" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="297.18" x2="530.86" y2="294.64" width="0.1524" layer="91"/>
+<junction x="530.86" y="297.18"/>
+<pinref part="C57" gate="G$1" pin="1"/>
+<wire x1="520.7" y1="297.18" x2="520.7" y2="294.64" width="0.1524" layer="91"/>
+<junction x="520.7" y="297.18"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -9330,6 +9490,11 @@ Mating wall wart : TOL-00298 (and others)</description>
 <wire x1="116.84" y1="177.8" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
 <label x="119.38" y="177.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="96.52" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
+<label x="236.22" y="96.52" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DAC_!LDAC" class="0">
 <segment>
@@ -9389,10 +9554,111 @@ Mating wall wart : TOL-00298 (and others)</description>
 <pinref part="J10" gate="G$1" pin="OUT"/>
 </segment>
 </net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="515.62" y1="251.46" x2="520.7" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="251.46" x2="520.7" y2="256.54" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="VBUS"/>
+<wire x1="520.7" y1="256.54" x2="525.78" y2="256.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_N" class="0">
+<segment>
+<wire x1="441.96" y1="119.38" x2="396.24" y2="119.38" width="0.1524" layer="91"/>
+<label x="424.18" y="119.38" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="P$32"/>
+<wire x1="350.52" y1="114.3" x2="396.24" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="396.24" y1="114.3" x2="396.24" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="492.76" y="259.08" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="490.22" y1="259.08" x2="505.46" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="USB_P" class="0">
+<segment>
+<wire x1="441.96" y1="116.84" x2="398.78" y2="116.84" width="0.1524" layer="91"/>
+<label x="424.18" y="116.84" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="P$31"/>
+<wire x1="350.52" y1="111.76" x2="398.78" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="111.76" x2="398.78" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="492.76" y="266.7" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="490.22" y1="266.7" x2="505.46" y2="266.7" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="259.08" y1="96.52" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="J2" gate="G$1" pin="D-"/>
+<wire x1="515.62" y1="259.08" x2="525.78" y2="259.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="D+"/>
+<wire x1="525.78" y1="261.62" x2="520.7" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="520.7" y1="261.62" x2="520.7" y2="266.7" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="520.7" y1="266.7" x2="515.62" y2="266.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
+<junction x="38.1" y="63.5"/>
+<pinref part="U4" gate="G$1" pin="AIN1"/>
+<wire x1="99.06" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="78.74" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C52" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
+<junction x="38.1" y="71.12"/>
+<wire x1="38.1" y1="71.12" x2="58.42" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="71.12" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="AIN0"/>
+<wire x1="58.42" y1="81.28" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="C54" gate="G$1" pin="1"/>
+<pinref part="C36" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="43.18" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="38.1" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
+<junction x="38.1" y="38.1"/>
+<wire x1="38.1" y1="38.1" x2="63.5" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="38.1" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="AIN2"/>
+<wire x1="63.5" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="C36" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="30.48" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
+<junction x="38.1" y="30.48"/>
+<wire x1="38.1" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="30.48" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="AIN3"/>
+<wire x1="66.04" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9400,4 +9666,10 @@ Mating wall wart : TOL-00298 (and others)</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
