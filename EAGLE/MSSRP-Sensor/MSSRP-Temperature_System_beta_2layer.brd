@@ -12,7 +12,7 @@
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -154,6 +154,19 @@
 <wire x1="35.56" y1="8.255" x2="35.56" y2="0" width="0" layer="20"/>
 <wire x1="26.035" y1="68.58" x2="29.845" y2="64.77" width="0" layer="20"/>
 <wire x1="29.845" y1="64.77" x2="29.845" y2="41.91" width="0" layer="20"/>
+<wire x1="35.56" y1="0" x2="86.995" y2="0" width="0.1524" layer="49"/>
+<wire x1="100" y1="2.54" x2="100" y2="100" width="0.1524" layer="49"/>
+<wire x1="100" y1="100" x2="0" y2="100" width="0.1524" layer="49"/>
+<wire x1="0" y1="100" x2="0" y2="68.58" width="0.1524" layer="49"/>
+<wire x1="89.535" y1="2.54" x2="100" y2="2.54" width="0.1524" layer="49"/>
+<wire x1="86.995" y1="0" x2="89.535" y2="2.54" width="0.1524" layer="49"/>
+<wire x1="0" y1="68.58" x2="26.035" y2="68.58" width="0.1524" layer="49"/>
+<wire x1="29.845" y1="41.91" x2="15.875" y2="27.94" width="0.1524" layer="49"/>
+<wire x1="15.875" y1="27.94" x2="15.875" y2="8.255" width="0.1524" layer="49"/>
+<wire x1="15.875" y1="8.255" x2="35.56" y2="8.255" width="0.1524" layer="49"/>
+<wire x1="35.56" y1="8.255" x2="35.56" y2="0" width="0.1524" layer="49"/>
+<wire x1="26.035" y1="68.58" x2="29.845" y2="64.77" width="0.1524" layer="49"/>
+<wire x1="29.845" y1="64.77" x2="29.845" y2="41.91" width="0.1524" layer="49"/>
 </plain>
 <libraries>
 <library name="wirepad">
