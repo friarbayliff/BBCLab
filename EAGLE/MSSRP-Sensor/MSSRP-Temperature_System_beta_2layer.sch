@@ -8990,10 +8990,10 @@ Pitch: 2.54 mm</text>
 </net>
 <net name="SD_CD" class="0">
 <segment>
-<wire x1="452.12" y1="101.6" x2="495.3" y2="101.6" width="0.1524" layer="91"/>
-<label x="454.66" y="101.6" size="1.778" layer="95"/>
-<wire x1="495.3" y1="101.6" x2="495.3" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="495.3" y1="86.36" x2="525.78" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="452.12" y1="93.98" x2="492.76" y2="93.98" width="0.1524" layer="91"/>
+<label x="454.66" y="93.98" size="1.778" layer="95"/>
+<wire x1="492.76" y1="93.98" x2="492.76" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="492.76" y1="86.36" x2="525.78" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="CARD_DETECT"/>
 </segment>
 <segment>
