@@ -7572,12 +7572,12 @@ Mating wall wart : TOL-00298 (and others)</description>
 <part name="C18" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="R75" library="SparkFun-Resistors" deviceset="100KOHM1/10W1%(0603)" device="" value="100k"/>
-<part name="Y1" library="microbuilder" deviceset="CRYSTAL" device="SMD"/>
+<part name="Y1" library="microbuilder" deviceset="CRYSTAL" device="SMD" value="7.68 MHz"/>
 <part name="C19" library="SparkFun-Capacitors" deviceset="18PF-50V-5%(0603)" device="" value="18pF"/>
 <part name="C20" library="SparkFun-Capacitors" deviceset="18PF-50V-5%(0603)" device="" value="18pF"/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="U3" library="MSSRP-Lib" deviceset="DS1337S+T&amp;R" device=""/>
-<part name="Y2" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="SMD"/>
+<part name="Y2" library="SparkFun-FreqCtrl" deviceset="CRYSTAL" device="SMD" value="32.768 kHz"/>
 <part name="C21" library="SparkFun-Capacitors" deviceset="0.1UF-25V-5%(0603)" device="" value="0.1uF"/>
 <part name="R76" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
 <part name="R77" library="SparkFun-Resistors" deviceset="10KOHM1/10W1%(0603)" device="0603" value="10K"/>
@@ -7751,8 +7751,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 Row: 26.67 mm
 Pitch: 2.54 mm</text>
 <text x="528.32" y="40.64" size="1.778" layer="97">MICRO-SD Socket</text>
-<text x="454.66" y="152.4" size="1.778" layer="97">32.768 kHz</text>
-<text x="132.08" y="99.06" size="1.778" layer="97">7.68 MHz</text>
 <text x="58.42" y="195.58" size="1.778" layer="97">MAX31855T</text>
 <text x="58.42" y="149.86" size="1.778" layer="97">MAX31855T</text>
 <text x="149.86" y="401.32" size="1.778" layer="97">U10</text>
